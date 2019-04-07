@@ -221,9 +221,9 @@ $( document ).ready(function() {
 /*------------------------------ Count Up ----------------------*/
 
 setInterval(function() {
-    var timespan = countdown(new Date("05/24/2012"), new Date());
+    var timespan = countdown(new Date("06/30/2019"), new Date());
     var div = document.getElementById('time');
-    div.innerHTML = "<div><span>Years</span>" + timespan.years + "</div>" + "<div><span>Months</span>" + timespan.months + "</div>" + "<div><span>Days</span>" + timespan.days + "</div>" + "<div><span>Hours</span>" + timespan.hours + "</div>" + "<div><span>Minutes</span>" + timespan.minutes + "</div>" + "<div><span>Seconds</span>" + timespan.seconds + "</div>"
+    div.innerHTML = "</div>" + "<div><span>Meses</span>" + timespan.months + "</div>" + "<div><span>Dias</span>" + timespan.days + "</div>" + "<div><span>Horas</span>" + timespan.hours + "</div>" + "<div><span>Minutos</span>" + timespan.minutes + "</div>" + "<div><span>Segundos</span>" + timespan.seconds + "</div>"
 }, 1000);
 
 /*------------------------------ Tooltips ----------------------*/
