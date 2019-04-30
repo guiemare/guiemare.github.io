@@ -523,12 +523,13 @@ color: #f04c74;
 }
 
 .man .ch-item { 
-	background-image: url(../images/man.jpg);
+	background-image: url(../img/guilherme.jpg);
+	/* background-image: url(../images/man.jpg); */
 	background-size: 300px 300px;
 }
 
 .woman .ch-item { 
-	background-image: url(../images/woman.jpg);
+	background-image: url(../img/maressa.jpg);
 	background-size: 300px 300px;
 }
 

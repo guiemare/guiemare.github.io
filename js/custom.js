@@ -15,64 +15,12 @@ $( document ).ready(function() {
 	$('.tooltips').tooltip();
 	
 	/*------------------------------ Voice Control -----------------*/
-	if (annyang) {
-	  var commands = {
-		'home': function() {
-			$('html, body').animate({
-				scrollTop: $("#page-top").offset().top
-			}, 2000);
-		},
-		
-		'about': function() {
-			$('html, body').animate({
-				scrollTop: $("#about").offset().top
-			}, 2000);
-		},	
-		
-		'family': function() {
-			$('html, body').animate({
-				scrollTop: $("#family").offset().top
-			}, 2000);
-		},
-
-		'moments': function() {
-			$('html, body').animate({
-				scrollTop: $("#moments").offset().top
-			}, 2000);
-		},
-		
-		'favourites': function() {
-			$('html, body').animate({
-				scrollTop: $("#favourites").offset().top
-			}, 2000);
-		},
-		
-		'blog': function() {
-			$('html, body').animate({
-				scrollTop: $("#blog").offset().top
-			}, 2000);
-		},
-		
-		'contact': function() {
-			$('html, body').animate({
-				scrollTop: $("#contactus").offset().top
-			}, 2000);
-		},
-		
-		'Purchase now': function() {
-			window.location = "http://www.themeforest.com"
-		}											
-			
-	  };
-	  
-	  annyang.addCommands(commands);
-	  annyang.start();
-	}
+	
 
 	/*------------------------------ Bootstrap Carousel ----------------------*/
 
 	$('#myCarousel').carousel({
-		interval: 18000, //changes the speed
+		interval: 10000, //changes the speed
 		pause: "false"
 	})
 	//Bootstrap Carousel Progressbar
@@ -82,7 +30,7 @@ $( document ).ready(function() {
 	});
 	$("#progressbar > .ui-progressbar-value").animate({
 		width: "100%"
-	}, 18000);
+	}, 10000);
 	
 	$('#myCarousel').bind('slid.bs.carousel', function (e) {		
 			$("#progressbar > .ui-progressbar-value").finish();
@@ -91,20 +39,11 @@ $( document ).ready(function() {
 			}, 0);
 			$("#progressbar > .ui-progressbar-value").animate({
 			width: "100%"
-			}, 18000);				
+			}, 10000);				
 	});
 
 	/*------------------------------ Masonry Blog -----------------*/
 
-	var $container = $('#blogs');
-	// initialize
-	$container.masonry({
-	  itemSelector: '.blog'
-	});
-	// initialize Masonry after all images have loaded  
-	$container.imagesLoaded( function() {
-	  $container.masonry();
-	});	
 
 	/*------------------------------ OWL Carousel -----------------*/
 
@@ -178,42 +117,9 @@ $( document ).ready(function() {
 	
 	/*------------------------------ Twitter Feeds -----------------*/
 	
-    $(".footer-tweet").tweet({
-		join_text: false,
-		username: "envato", // Username
-		modpath: "./js/twitter/",
-		avatar_size: false,
-		count: 3,
-		template: "{text} <br> {time}",
-		loading_text: "loading twitter feed...",
-		seconds_ago_text: "%d seconds ago",
-		a_minutes_ago_text: "a minute ago",
-		minutes_ago_text: "%d minutes ago",
-		a_hours_ago_text: "an hour ago",
-		hours_ago_text: "%d hours ago",
-		a_day_ago_text: "a day ago",
-		days_ago_text: "%d days ago",
-		view_text: "view tweet on twitter"
-	});
-	
-	$(".footer-tweet ul").owlCarousel({singleItem : true,});
 	
 	/*------------------------------ Ajax Contact Form -----------------*/
 	
-	$("#submit").click(function(){
-		var data = $("#contact").serialize();
-		$.ajax({
-			type	: "POST",
-			url 	: "ajax/sendemail.php",
-			data 	: data,
-			success : function(q)
-				{
-				$("#ContactFormDiv").html(q);
-				}
-			});
-		return false;
-	});
-	return false;	
 	
 });
 
@@ -241,11 +147,11 @@ $(window).load(function() {
 /*------------------------------ Collapse the navbar on scroll ----------------------*/
 
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
+    // if ($(".navbar").offset().top > 50) {
+    //     $(".navbar-fixed-top").addClass("top-nav-collapse");
+    // } else {
+    //     $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    // }
 });
 
 /*------------------------------ Background Video ----------------------*/
