@@ -3137,7 +3137,7 @@ input[type=text]::-ms-clear {
 
 .tabela-presente img {
     max-width: 128px;
-    max-height: px;
+    max-height: 128px;
     width: auto;
     height: auto;
 }
@@ -3147,7 +3147,8 @@ td,
 th,
 tfoot {
     border: solid 1px #f04c74;
-    padding: 10px;
-    /* margin: 10px; */
+    padding: 5px;
+    /* margin: 5px; */
     margin: auto;
+    text-align: center
 }
