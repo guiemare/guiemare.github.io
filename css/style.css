@@ -3152,3 +3152,16 @@ tfoot {
     margin: auto;
     text-align: center
 }
+
+tr.ganhei {
+    background: #f07895 url(../images/pattern.png) repeat center center;
+}
+
+
+/* Background:	#ffffff (White)
+Primary Color:	#ef6a8a (Pink)
+Secondary Color:	#f04c74 (Dark Pink)
+Headers / Titles:	#283a44 (Dark Grey)
+Subtitles:	#687177 (Light Grey)
+a (standard):	#ef6a8a (Pink)
+a (visited):	#f04c74 (Dark Pink) */
