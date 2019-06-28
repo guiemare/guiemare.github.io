@@ -127,7 +127,7 @@ $( document ).ready(function() {
 /*------------------------------ Count Up ----------------------*/
 
 setInterval(function() {
-    var timespan = countdown(new Date(2019,5,30,20,0,0), new Date());
+    var timespan = countdown(new Date(2019,5,30,16,0,0), new Date());
     var div = document.getElementById('time');
     div.innerHTML = "</div>" + "<div><span>Meses</span>" + timespan.months + "</div>" + "<div><span>Dias</span>" + timespan.days + "</div>" + "<div><span>Horas</span>" + timespan.hours + "</div>" + "<div><span>Minutos</span>" + timespan.minutes + "</div>" + "<div><span>Segundos</span>" + timespan.seconds + "</div>"
 }, 1000);
